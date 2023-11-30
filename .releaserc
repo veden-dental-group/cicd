@@ -1,7 +1,10 @@
 {
   "branches": [
     "main",
-    "beta"
+    {
+      "name": "beta",
+      "prerelease": true
+    }
   ],
   "plugins": [
     "@semantic-release/npm",
