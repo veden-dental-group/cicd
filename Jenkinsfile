@@ -10,8 +10,16 @@ pipeline {
         stage('pull source code') {
             steps {
                 script {
-                    def TargetBranch = env.BRANCH_NAME
-                    git branch: "${TargetBranch}", credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                    def targetBranch = env.BRANCH_NAME
+                    echo "Current branch: ${targetBranch}"
+
+                    if (targetBranch == 'main') {
+                        git branch: 'main', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                    } else if (targetBranch == 'beta') {
+                        git branch: 'beta', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                    } else {
+                        error "Unsupported branch: ${targetBranch}"
+                    }
                 }
             }
         }
