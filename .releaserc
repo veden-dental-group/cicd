@@ -1,0 +1,14 @@
+{
+  "branchs": [
+    "main",
+    "beta"
+  ],
+  "plugins": [
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ]
+  ]
+}
