@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/veden-dental/cicd/compare/v1.0.0...v1.0.1) (2023-11-30)
+
+
+### Bug Fixes
+
+* update releaserc ([57012a1](https://github.com/veden-dental/cicd/commit/57012a1b2bfb0e8dbaa5d46d7459696b1561a641))
+
 # 1.0.0 (2023-11-30)
 
 
