@@ -10,15 +10,15 @@ pipeline {
         stage('pull source code') {
             steps {
                 script {
-                    def targetBranch = env.BRANCH_NAME
-                    echo "Current branch: ${targetBranch}"
+                    BRANCH = sh(script: "git rev-parse --abbrev-ref HEAD", returnStdout: true).trim()
+                    echo "Current branch: ${BRANCH}"
 
-                    if (targetBranch == 'main') {
+                    if (BRANCH == 'main') {
                         git branch: 'main', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
-                    } else if (targetBranch == 'beta') {
+                    } else if (BRANCH == 'beta') {
                         git branch: 'beta', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
                     } else {
-                        error "Unsupported branch: ${targetBranch}"
+                        error "Unsupported branch: ${BRANCH}"
                     }
                 }
             }
