@@ -11,7 +11,11 @@ pipeline {
             steps {
                 script {
                     def TargetBranch = env.BRANCH_NAME
-                    git branch: TargetBranch, credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                    if (targetBranch == 'main') {
+                        git branch: 'main', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                    } else if (targetBranch == 'beta') {
+                        git branch: 'beta', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                    }
                 }
             }
         }
