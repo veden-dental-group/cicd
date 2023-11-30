@@ -9,7 +9,10 @@ pipeline {
     stages {
         stage('pull source code') {
             steps {
-                git branch: env.BRANCH_NAME, credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                script {
+                    def TargetBranch = env.BRANCH_NAME
+                    git branch: TargetBranch, credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                }
             }
         }
         
