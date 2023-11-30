@@ -1,3 +1,10 @@
+# [1.1.0-beta.1](https://github.com/veden-dental/cicd/compare/v1.0.3...v1.1.0-beta.1) (2023-11-30)
+
+
+### Features
+
+* cool feature ([43cd882](https://github.com/veden-dental/cicd/commit/43cd8827ef842d3bb34378bcc8f825ded8aa611e))
+
 ## [1.0.3](https://github.com/veden-dental/cicd/compare/v1.0.2...v1.0.3) (2023-11-30)
 
 
