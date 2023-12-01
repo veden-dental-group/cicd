@@ -8,10 +8,9 @@
 
 # [1.2.0-beta.2](https://github.com/veden-dental/cicd/compare/v1.2.0-beta.1...v1.2.0-beta.2) (2023-12-01)
 
+### Features
 
-### Bug Fixes
-
-* remove code ([3e09fb4](https://github.com/veden-dental/cicd/commit/3e09fb464292ae10ba40306ee0f4e811106b7c13))
+* cool feature ([81569c4](https://github.com/veden-dental/cicd/commit/81569c41a03f24f6188734b63d63b4e930b65c94))
 
 # [1.2.0-beta.1](https://github.com/veden-dental/cicd/compare/v1.1.1...v1.2.0-beta.1) (2023-12-01)
 
