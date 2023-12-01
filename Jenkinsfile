@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('pull source code') {
             steps {
-                git env.BRANCH_NAME: 'beta', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
+                git branch: env.BRANCH_NAME, credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
             }
         }
         
