@@ -21,6 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "commit": "cz",
+    "version": "echo $npm_package_version",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
