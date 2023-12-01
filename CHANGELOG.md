@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/veden-dental/cicd/compare/v1.0.3...v1.1.0) (2023-12-01)
+
+
+### Bug Fixes
+
+* lkajsdfklasjklfas ([17117f6](https://github.com/veden-dental/cicd/commit/17117f650c270b3c43c140558d41d6df00cee674))
+* **masklfjklasdfkldsaf:** kjdsfklasjfkldsa ([760b80c](https://github.com/veden-dental/cicd/commit/760b80c0570fc4520d87ea7a608b8bf0c28a4642))
+* update ([c3dfbd9](https://github.com/veden-dental/cicd/commit/c3dfbd92aa08ef219ed2cfa6316bd9f8e38848b5))
+
+
+### Features
+
+* cool feature ([43cd882](https://github.com/veden-dental/cicd/commit/43cd8827ef842d3bb34378bcc8f825ded8aa611e))
+
 # [1.1.0-beta.1](https://github.com/veden-dental/cicd/compare/v1.0.3...v1.1.0-beta.1) (2023-11-30)
 
 
