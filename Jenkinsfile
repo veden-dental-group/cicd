@@ -9,26 +9,15 @@ pipeline {
     stages {
         stage('pull source code') {
             steps {
-                script {
-                    BRANCH = env.BRANCH_NAME
-                    echo "Current branch: ${BRANCH}"
-
-                    // if (BRANCH == 'main') {
-                    //     git branch: 'main', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
-                    // } else if (BRANCH == 'beta') {
-                    //     git branch: 'beta', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
-                    // } else {
-                    //     error "Unsupported branch: ${BRANCH}"
-                    // }
-                }
+                git env.BRANCH_NAME: 'beta', credentialsId: 'github', poll: false, url: 'git@github.com:veden-dental/cicd.git'
             }
         }
         
-        // stage('update version') {
-        //     steps {
-        //         sh "npm install"
-        //         sh "npx semantic-release"
-        //     }
-        // }
+        stage('update version') {
+            steps {
+                sh "npm install"
+                sh "npx semantic-release"
+            }
+        }
     }
 }
